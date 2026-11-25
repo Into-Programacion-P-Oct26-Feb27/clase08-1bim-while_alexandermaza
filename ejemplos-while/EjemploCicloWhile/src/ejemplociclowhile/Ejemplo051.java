@@ -33,8 +33,13 @@ public class Ejemplo051 {
         String nombre;
         String apellido;
         
+        String cadenaFinal = "Las notas ingresadas son:\n";
+        
         System.out.println("Ingrese su nombre");
             nombre = entrada.nextLine();
+            
+        cadenaFinal = String.format("%sNombre del estudiante es: %s\n",
+                cadenaFinal,nombre);
             
             System.out.println("Ingrese su apellido");
             apellido = entrada.nextLine();
