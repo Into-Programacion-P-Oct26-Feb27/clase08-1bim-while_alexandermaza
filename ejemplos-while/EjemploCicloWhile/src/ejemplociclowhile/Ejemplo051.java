@@ -44,9 +44,9 @@ public class Ejemplo051 {
             System.out.println("Ingrese su apellido");
             apellido = entrada.nextLine();
             
-        
-        String cadenaFinal = "Las notas ingresadas son:\n";
-
+            cadenaFinal = String.format("%sApellido  del estudiante es: %s\n",
+                cadenaFinal,apellido);
+            
         System.out.println("Ingrese las notas de los estudiantes de su "
                 + "materia");
 
@@ -54,6 +54,7 @@ public class Ejemplo051 {
             System.out.printf("Ingrese calificación "
                     + "número %d\n", contador);
             calificacion = entrada.nextDouble();
+            
             cadenaFinal = String.format("%s%.1f\n",cadenaFinal,calificacion);
             
             suma_total = suma_total + calificacion;
@@ -68,7 +69,7 @@ public class Ejemplo051 {
        
 
         //System.out.printf("El promedio final es %.2f\n", promedio_final);
-        System.out.printf("%s %s\n%s\n",nombre,apellido, cadenaFinal);
+        System.out.printf("%s ", cadenaFinal);
 
     }
 }
