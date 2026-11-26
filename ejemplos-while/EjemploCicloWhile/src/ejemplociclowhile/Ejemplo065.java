@@ -48,5 +48,5 @@ public class Ejemplo065 {
     }
 }
 /*
-
+Agregar entrada.NextLine para hacer una limpieza de buffer
 */
